@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforma vidas con tu donación</title>
+    <link rel="stylesheet" href="/public/css/donaciones.css">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="/index.html"><img class="logo" src="/public/img/Logo/Logo_Blanco.png" alt="logo" ></a>
+        </div>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button id="cerrar" class="cerrar-menu"><i class="bi bi-x-square-fill"></i></button>
+            <ul class="nav-list">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Producto</a></li>
+                <li><a href="/public/pages/donaciones.html">Donaciones</a></li>
+                <li><a href="">Retos y Proyectos</a></li>
+                <li><a href="#explora-ods">Explora los ODS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="promo-section">
+            <h1>Transforma vidas con tu donación</h1>
+            <p>
+                Ayuda a Erradicar la Pobreza Hoy: Tu donación puede transformar vidas. Con solo un pequeño aporte, estarás
+                empoderando a familias vulnerables, brindándoles acceso a recursos esenciales como educación, salud y
+                oportunidades laborales. Juntos, podemos construir un mundo más equitativo y sostenible. Dona ahora y sé parte
+                del cambio.
+            </p>
+        </div>
+        <div class="signup-section">
+            <h2>Regístrate</h2>
+
+            <form id="form" class="form">
+                <input type="text" id="name" placeholder="Nombre" required >
+                <input type="text" id="lastname" placeholder="Apellido" required>
+                <input type="email" id="email" placeholder="Correo electrónico"  required >
+                <input type="text" id="phone" placeholder="Teléfono"  required>
+                <select id="donationtype" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option>Ropa</option>
+                    <option>Alimentos</option>
+                    <option>Útiles escolares</option>
+                    <option>Otros</option>
+                </select>
+
+                <!-- Checkbox -->
+                <div>
+                    <input type="checkbox" id="showComments" name="showComments" onclick="toggleComments()">
+                    <label for="showComments">Añadir comentario</label>
+                </div>
+                
+                <!-- Cuadro de comentario, oculto por defecto -->
+                <div id="commentsBox">
+                    <label for="comments">Comentarios:</label>
+                    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Escribe tus comentarios aquí"></textarea>
+                </div>
+
+                <div>
+                    <button type="submit" >Enviar</button>
+                </div>
+                
+
+                <div id="errormessages" style="color:red ; margin-top: 10px;"></div>
+            </form>
+        </div>
+    </div>
+<script src="/public/js/static/donacion.js"></script>
+<script src="/public/js/dinamic/menu.js"></script>
+
+   
+</body>
+</html>
