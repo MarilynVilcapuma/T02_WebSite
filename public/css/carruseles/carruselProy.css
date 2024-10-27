@@ -1,0 +1,9 @@
+.Jusa{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 80vh;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    background: white;
+} 
