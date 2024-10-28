@@ -51,23 +51,3 @@ app.post('/submit-form', (req, res) => {
         });
     });
 });
-
-
-
-// Servir el archivo HTML principal
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
-});
-
-app.listen(port, () => {
-    console.log(`Servidor escuchando en http://${ip}:${port}`);
-
-    // Prueba de conexión a la base de datos al iniciar el servidor
-    pool.query('SELECT 1 + 1 AS solution', (error, results) => {
-        if (error) {
-            console.error('Error en la conexión a la base de datos');
-        } else {
-            console.log('Conexión exitosa');
-        }
-    });
-});
