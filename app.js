@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const mysql = require('mysql2');
 const path = require('path');
 const app = express();
-const ip = 'localhost';
+const ip = '34.239.33.247';
 const port = 3000;
 const fs = require('fs');
 
